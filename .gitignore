@@ -1,0 +1,22 @@
+# Python environments and caches
+.venv/
+venv/
+__pycache__/
+.pytest_cache/
+*.py[cod]
+
+# Local configuration and secrets
+.env
+.env.*
+!.env.example
+
+# Generated output and editor files
+public/index.html
+public/styles.css
+public/script.js
+public/prototype.html
+public/prototype.css
+public/prototype.js
+public/logo.svg
+.vscode/
+.DS_Store

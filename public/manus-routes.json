@@ -1,0 +1,6 @@
+{
+  "routes": [
+    { "path": "/", "title": "Pharmacy Patient Assistant — Feasibility Brief" },
+    { "path": "/prototype", "title": "Milestone 1 Prototype Chat" }
+  ]
+}

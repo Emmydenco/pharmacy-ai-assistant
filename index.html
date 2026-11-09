@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8faf7" />
+    <meta name="description" content="Pharmacy Patient Assistant — general medication information with safety in mind." />
+    <title>Pharmacy Patient Assistant</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <div class="page-width header-inner">
+        <a class="brand" href="#top" aria-label="Pharmacy Patient Assistant home">
+          <span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span>
+          <span class="brand-name">Pharmacy Patient Assistant</span>
+        </a>
+        <nav class="desktop-nav" aria-label="Primary navigation">
+          <a href="#top">Home</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#safety">Safety</a>
+          <a href="#about">About</a>
+          <a href="#status">Prototype status</a>
+        </nav>
+        <a class="header-cta" href="/prototype">Ask a Medication Question <span>↗</span></a>
+        <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span><span></span><b class="sr-only">Open menu</b></button>
+        <nav id="mobile-nav" class="mobile-nav" aria-label="Mobile navigation">
+          <a href="#top">Home</a>
+          <a href="#how-it-works">How it works</a>
+          <a href="#safety">Safety</a>
+          <a href="#about">About</a>
+          <a href="#status">Prototype status</a>
+          <a class="mobile-cta" href="/prototype">Ask a Medication Question <span>↗</span></a>
+        </nav>
+      </div>
+    </header>
+
+    <main id="top">
+      <section class="hero page-width">
+        <div class="hero-copy">
+          <p class="product-kicker"><span class="kicker-line"></span> Community pharmacy support</p>
+          <h1>Medication information, <em>with safety in mind.</em></h1>
+          <p class="hero-lede">Get clear, accessible information about medicines and their use. When a question requires personal clinical judgement, we'll direct you to a pharmacist.</p>
+          <div class="hero-actions">
+            <a class="button button-primary" href="/prototype">Ask a Medication Question <span>↗</span></a>
+            <a class="button button-secondary" href="#how-it-works">How It Works <span>↓</span></a>
+          </div>
+          <p class="hero-boundary"><span class="boundary-icon">✓</span><span><strong>A careful starting point.</strong> This is a student prototype for general information, not a diagnosis or prescribing service.</span></p>
+        </div>
+        <div class="hero-preview" aria-label="Preview of the medication assistant">
+          <div class="preview-top"><div class="assistant-identity"><span class="assistant-avatar"><i></i><i></i><i></i></span><span><strong>Medication Assistant</strong><small>Pharmacy Patient Assistant</small></span></div><span class="demo-status">Demonstration mode</span></div>
+          <div class="preview-conversation">
+            <div class="preview-message preview-user">What kind of questions can I ask?</div>
+            <div class="preview-message preview-assistant"><span class="message-label">Assistant</span>I can help demonstrate general medication-information questions. If your question is personal, urgent, or about changing treatment, I will point you to a pharmacist or emergency service.</div>
+          </div>
+          <div class="preview-footer"><span class="secure-dot"></span> No real patient information · prototype only</div>
+        </div>
+      </section>
+
+      <section class="trust-band" aria-label="Safety notice">
+        <div class="page-width trust-inner"><span class="trust-icon">!</span><p><strong>Important:</strong> Do not enter names, diagnoses, prescriptions, or other personal health information. In an emergency, contact local emergency services immediately.</p><a href="#safety">Read the safety boundaries <span>→</span></a></div>
+      </section>
+
+      <section id="how-it-works" class="section page-width">
+        <div class="section-intro"><p class="section-kicker">How it works</p><h2>A simple path to the right kind of help.</h2><p>Each interaction starts with a general question. The prototype is designed to be clear about what it can do—and when a person should take over.</p></div>
+        <div class="steps-grid">
+          <article class="step"><span class="step-number">01</span><span class="step-icon">✎</span><h3>Ask</h3><p>Type a general question about using a medicine or understanding common information.</p></article>
+          <article class="step"><span class="step-number">02</span><span class="step-icon">◌</span><h3>Receive information</h3><p>In a reference-connected version, answers can be supported by available sources. This Milestone 1 demonstration remains simulated.</p></article>
+          <article class="step"><span class="step-number">03</span><span class="step-icon">+</span><h3>Escalate when needed</h3><p>Diagnosis, treatment changes, urgent situations, and personal clinical decisions are directed to a pharmacist or emergency service.</p></article>
+        </div>
+      </section>
+
+      <section class="capabilities-section">
+        <div class="page-width section capabilities-inner">
+          <div class="section-intro compact"><p class="section-kicker">What this prototype explores</p><h2>Useful in the everyday moments. Honest about the limits.</h2></div>
+          <div class="capability-list">
+            <div class="capability-item"><span class="capability-check">✓</span><div><h3>General medication information</h3><p>Start with routine, non-diagnostic questions about medicine use.</p></div></div>
+            <div class="capability-item"><span class="capability-check">✓</span><div><h3>Common side-effect guidance</h3><p>Explain that personal symptoms and serious concerns need a pharmacist or clinician.</p></div></div>
+            <div class="capability-item"><span class="capability-check">✓</span><div><h3>Clear next steps</h3><p>Make it obvious when to ask a pharmacist instead of continuing with an automated answer.</p></div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section page-width about-section">
+        <div class="about-grid">
+          <div class="section-intro"><p class="section-kicker">About the project</p><h2>Making everyday medication questions easier to start.</h2></div>
+          <div class="about-copy"><p>People often have practical questions about medicines but may not know whether to search online, wait for a pharmacy visit, or ask for urgent help. This student project explores a clearer first step for general information while keeping professional judgement with a pharmacist.</p><p>The aim is not to replace care. It is to learn how a small, safety-conscious assistant can communicate its limits, stop before unsafe advice, and make the next human step easier to understand.</p></div>
+        </div>
+      </section>
+
+      <section id="safety" class="section page-width safety-section">
+        <div class="section-intro"><p class="section-kicker">Safety boundaries</p><h2>The assistant should know when to stop.</h2><p>Prompts and simple rules can support safer behaviour, but they do not guarantee clinical safety. This project remains subject to pharmacist, privacy, security, licensing, and regulatory review.</p></div>
+        <div class="boundary-grid">
+          <article class="boundary-card boundary-yes"><span class="boundary-card-label">Suitable for this prototype</span><h3>General information questions</h3><p>For example: “What can I ask this assistant?” or “What is a general side-effect question?”</p></article>
+          <article class="boundary-card boundary-no"><span class="boundary-card-label">Needs a person</span><h3>Diagnosis or treatment changes</h3><p>The prototype will not diagnose, prescribe, change a dose, or recommend starting or stopping treatment.</p></article>
+          <article class="boundary-card boundary-urgent"><span class="boundary-card-label">Needs immediate help</span><h3>Potential emergencies</h3><p>Breathing trouble, collapse, seizure, overdose, or similar urgent situations should go to local emergency services.</p></article>
+        </div>
+      </section>
+
+      <section id="status" class="status-section">
+        <div class="page-width status-inner">
+          <div><p class="section-kicker">Prototype status</p><h2>A working foundation, not a finished clinical product.</h2><p>The live demonstration includes a FastAPI backend, request validation, deterministic safety routing, mock mode, hosted-provider configuration, loading states, and safe provider failures.</p></div>
+          <div class="status-note"><span class="status-dot"></span><div><strong>Demonstration mode</strong><p>Responses are simulated unless hosted inference is configured on the server. No conversation is saved and no real medication knowledge base is connected yet.</p></div></div>
+        </div>
+      </section>
+
+      <section class="final-cta page-width"><div><p class="section-kicker">Try the working demonstration</p><h2>Start with a general question.</h2></div><a class="button button-primary" href="/prototype">Ask a Medication Question <span>↗</span></a></section>
+    </main>
+
+    <footer class="site-footer"><div class="page-width footer-inner"><div class="footer-brand"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><div><strong>Pharmacy Patient Assistant</strong><small>A student prototype for community pharmacy support</small></div></div><div class="footer-links"><a href="/prototype">Open prototype</a><a href="#top">Back to top ↑</a></div></div></footer>
+    <script src="script.js"></script>
+  </body>
+</html>

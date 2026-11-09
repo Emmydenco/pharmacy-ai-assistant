@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f8faf7" />
+    <meta name="description" content="Try the Pharmacy Patient Assistant demonstration." />
+    <title>Ask a Medication Question — Pharmacy Patient Assistant</title>
+    <link rel="stylesheet" href="prototype.css" />
+  </head>
+  <body>
+    <header class="app-header">
+      <div class="app-header-inner">
+        <a class="app-brand" href="/" aria-label="Back to Pharmacy Patient Assistant overview"><span class="brand-mark" aria-hidden="true"><i></i><i></i><i></i></span><span><strong>Pharmacy Patient Assistant</strong><small>General medication information</small></span></a>
+        <a class="back-link" href="/">Back to overview <span>↗</span></a>
+      </div>
+    </header>
+
+    <main class="app-shell">
+      <section class="app-intro">
+        <p class="product-kicker"><span class="kicker-line"></span> Try the demonstration</p>
+        <h1>Medication information, <em>with safety in mind.</em></h1>
+        <p>Ask a general question about medicines and their use. When a question needs personal clinical judgement, this prototype will direct you to a pharmacist.</p>
+      </section>
+
+      <section class="app-notice" aria-label="Prototype notice"><span class="notice-icon">!</span><p><strong>Demonstration mode:</strong> responses are simulated. Do not enter personal health information or use a response to make a treatment decision.</p><span class="mode-badge" id="mode-badge">Demonstration mode</span></section>
+
+      <section class="chat-card" aria-label="Medication information chat">
+        <div class="chat-card-head"><div class="assistant-identity"><span class="assistant-avatar"><i></i><i></i><i></i></span><span><strong>Medication Assistant</strong><small>Pharmacy Patient Assistant</small></span></div><button id="reset-button" class="reset-button" type="button">Reset conversation</button></div>
+        <div class="chat-intro"><p>Choose an example or write your own general question.</p><div class="suggested-questions" aria-label="Example questions"><button type="button" class="suggested-question" data-question="What is paracetamol used for?">What is paracetamol used for?</button><button type="button" class="suggested-question" data-question="What are common side effects of medicines?">Common side effects</button><button type="button" class="suggested-question" data-question="How should I read a medicine label?">How should I read a medicine label?</button></div></div>
+        <div id="chat-history" class="chat-history" aria-live="polite" aria-label="Conversation"></div>
+        <div id="error-banner" class="error-banner" role="alert" hidden></div>
+        <form id="chat-form" class="chat-form"><label class="sr-only" for="message-input">Your medication question</label><textarea id="message-input" name="message" rows="2" maxlength="2000" placeholder="Type a general medication question…" required></textarea><div class="form-footer"><span>No real patient information · 2,000 character limit</span><button id="send-button" class="send-button" type="submit">Send <span>↗</span></button></div></form>
+      </section>
+
+      <section class="app-footnote"><div><span class="footnote-label">What is working</span><p>Request validation, safety routing, mock responses, hosted-provider configuration, loading states, and safe provider failures.</p></div><div><span class="footnote-label">What is still to come</span><p>Approved medication sources, retrieval, citations, inventory, authentication, and a pharmacist workflow.</p></div></section>
+      <p class="app-disclaimer">This is a student prototype, not a clinical service. Further clinical, privacy, security, licensing, and regulatory review is required before real-world use.</p>
+    </main>
+    <script src="prototype.js"></script>
+  </body>
+</html>
